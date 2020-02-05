@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PollResultsActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/editparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <include layout="@layout/include_progress_overlay"/>
+
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/tendp"
+            android:layout_gravity="center"
+            android:textColor="@color/failed_msg"
+            android:textSize="@dimen/fifteendp"
+            android:textStyle="bold"
+            android:fontFamily="@string/font_family"
+            android:text="@string/action_refresh"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="@dimen/tendp"
+            android:layout_marginBottom="@dimen/twentydp"
+            android:text="Question:"
+            android:textColor="@color/colorBlack"
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Vote Summary:"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/twentydp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:text="Option 1:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/twentydp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:text="Option 2:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/twentydp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:text="Option 3:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/twentydp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="@dimen/tendp"
+            android:text="Members Who Voted:"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/twentydp"
+            android:textStyle="bold" />
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:divider="@null"
+            android:layout_marginTop="@dimen/twentydp"
+            android:layout_marginBottom="@dimen/twentydp"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

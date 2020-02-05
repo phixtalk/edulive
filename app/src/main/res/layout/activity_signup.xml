@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/l_bg"
+    tools:context=".SignupActivity">
+    <!--eceff5-->
+
+    <!-- Login progress -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.edulive.view.CustomFontsView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:fontFamily="@string/font_family"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_centerInParent="true"
+                android:textSize="25dp"
+                android:text="Sign Up Form"
+                android:textStyle="bold"
+                />
+
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:fontFamily="@string/font_family"
+                android:paddingRight="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:visibility="gone"
+                />
+
+            <!--ACCOUNT TYPE OPTION-->
+
+            <!--OTHER INPUT OPTIONS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <AutoCompleteTextView
+                        android:id="@+id/firstname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:hint="@string/prompt_firstname"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:fontFamily="@string/font_family"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+                    <AutoCompleteTextView
+                        android:id="@+id/lastname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:hint="@string/prompt_lastname"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:fontFamily="@string/font_family"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+            </LinearLayout>
+
+            <com.edulive.view.CustomFontsEdit
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_phone"
+                android:fontFamily="@string/font_family"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="@string/prompt_phone"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <com.edulive.view.CustomFontsEdit
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_alternate_email"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="@string/prompt_email"
+                android:layout_gravity="center"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:fontFamily="@string/font_family"
+                />
+            <com.edulive.view.CustomFontsEdit
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:drawableLeft="@drawable/ic_lock"
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:fontFamily="@string/font_family" />
+            <Button
+                android:id="@+id/email_sign_up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_submit_short"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_marginTop="@dimen/dots_height"
+                android:fontFamily="@string/font_family"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twentydp"
+                android:orientation="horizontal">
+                <com.edulive.view.CustomFontsView
+                    android:id="@+id/newAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@string/font_family"
+                    android:text="Already have an account? Tap here to login." />
+            </LinearLayout>
+
+            <!--
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/txtUrl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:layout_marginTop="@dimen/tendp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="11dp"
+                android:text=""
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@string/font_family" />
+            -->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/twentydp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

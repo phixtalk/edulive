@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "780151632763",
+    "firebase_url": "https://edulive-d6d12.firebaseio.com",
+    "project_id": "edulive-d6d12",
+    "storage_bucket": "edulive-d6d12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780151632763:android:b8ac67fde78c36cb",
+        "android_client_info": {
+          "package_name": "com.edulive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780151632763-ctmatol0l9pr0ebauuoj6813ve9mppgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edulive",
+            "certificate_hash": "3697bb01012fc0271d08f04f88032e84702179b3"
+          }
+        },
+        {
+          "client_id": "780151632763-ofkjk3te5eco86kk55grb121k8m6qmnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4pr2Rg4HduQiDeH3nso05ahghSBCFEJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780151632763-ofkjk3te5eco86kk55grb121k8m6qmnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

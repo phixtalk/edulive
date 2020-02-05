@@ -1,0 +1,239 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tendp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:padding="1dp">
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/feed_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:text="My Dashboard"
+                android:textColor="@color/button"
+                android:layout_centerInParent="true"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logoView"
+            android:layout_width="150dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp">
+            <com.edulive.view.CustomFontsView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="@dimen/fifteendp"
+                android:text="Fullnames: "
+                android:gravity="left|center"
+                android:textColor="@color/colorBlack"
+                />
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/name_holder"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="@dimen/fifteendp"
+                android:gravity="left"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/fivedp">
+            <com.edulive.view.CustomFontsView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:textSize="@dimen/fifteendp"
+                android:text="Emaill: "
+                android:gravity="left|center"
+                android:textColor="@color/colorBlack"
+                />
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/email_holder"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:textSize="@dimen/fifteendp"
+                android:gravity="left|center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="@dimen/fivedp">
+            <Button
+                android:id="@+id/btn_courses"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="My \nCourses"
+                android:background="#008d4c"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_list"
+                android:drawableTint="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="3dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/btn_newcourse"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="New \nCourse"
+                android:drawableLeft="@drawable/ic_add"
+                android:drawableTint="@color/colorWhite"
+                android:background="#e08e0b"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_alignParentLeft="true"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/fivedp">
+            <Button
+                android:id="@+id/btn_all_courses"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="All \nCourses"
+                android:background="#e08e0b"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_list"
+                android:drawableTint="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="3dp"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/btn_messages"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="My \nMessages"
+                android:drawableLeft="@drawable/ic_sms"
+                android:drawableTint="@color/colorWhite"
+                android:background="#367fa9"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_alignParentLeft="true"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/fivedp">
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="Update \nProfile"
+                android:drawableLeft="@drawable/ic_action_account"
+                android:drawableTint="@color/colorWhite"
+                android:background="#367fa9"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:layout_marginRight="3dp"
+                android:gravity="left"
+                android:layout_alignParentLeft="true" />
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="10dp"
+                android:text="Exit &amp; \nSign Out"
+                android:background="#d73925"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:drawableLeft="@drawable/ic_exit"
+                android:drawableTint="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/txtUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:layout_marginTop="@dimen/twentydp"
+            android:paddingBottom="@dimen/tendp"
+            android:textColor="@color/button"
+            android:textSize="@dimen/fifteendp"
+            android:text="@string/action_privacy_policy"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="@string/font_family"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

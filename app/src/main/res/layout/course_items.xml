@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--android:background="@color/colorWhite"-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fivedp"
+
+        android:layout_marginLeft="@dimen/fivedp"
+        android:layout_marginRight="@dimen/fivedp"
+        android:layout_marginTop="@dimen/fivedp"
+        android:paddingBottom="@dimen/fivedp"
+        android:paddingTop="@dimen/fivedp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.edulive.view.CustomFontsView
+                android:id="@+id/caption"
+                android:fontFamily="@string/font_family"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/fivedp"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:text="Java" />
+            <ImageView
+                android:id="@+id/is_member"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_online_24dp"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/btn_approve"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_approve"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/btn_decline"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_decline"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/btn_results"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_list"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/btn_chart"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_chart"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_delete"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/btn_download"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:baselineAlignBottom="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_download"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:fontFamily="@string/font_family"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/fifteendp"
+            android:text="Computer Science | UNN"/>
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/created_by"
+            android:layout_width="fill_parent"
+            android:fontFamily="@string/font_family"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="italic"
+            android:textSize="@dimen/tendp"
+            android:text="Created By:"/>
+
+    </LinearLayout>
+</LinearLayout>

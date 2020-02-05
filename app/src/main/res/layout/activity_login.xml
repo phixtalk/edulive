@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:background="@drawable/l_bg">
+    <!---->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dots_height">
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+        <com.edulive.view.CustomFontsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info"
+            android:fontFamily="@string/font_family"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/tendp"
+            android:textColor="@color/failed_msg"
+            />
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:fontFamily="@string/font_family"
+            android:textColor="@color/failed_msg"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dots_height"
+        android:paddingBottom="@dimen/dots_height"
+        android:paddingLeft="@dimen/thirtydp"
+        android:paddingRight="@dimen/thirtydp"
+        android:paddingTop="@dimen/dots_height">
+        <!-- Add App Logo-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="245dp"
+            android:layout_height="72dp"
+            android:src="@drawable/logo" />
+        <com.edulive.view.CustomFontsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="@string/app_slogan"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/slide_desc" />
+
+        <com.edulive.view.CustomFontsEdit
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_alternate_email"
+            android:singleLine="true"
+            android:hint="Email Address"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            />
+        <com.edulive.view.CustomFontsEdit
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="Your Password"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:imeActionLabel="Login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+        <!--android:imeActionId="@+id/login"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tendp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/email_sign_in_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Login"
+                android:background="@drawable/button_bg_rounded_corners"
+                android:textSize="@dimen/eighteendp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/fifteendp"
+        android:orientation="horizontal">
+        <com.edulive.view.CustomFontsView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/twentydp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@string/font_family"
+            android:text="Register." />
+    </LinearLayout>
+
+</LinearLayout>

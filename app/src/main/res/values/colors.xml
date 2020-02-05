@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4863a0</color><!--33ccff-->
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#4863a0</color>
+    <!--D81B60-->
+
+    <!--CUSTOM ADDED COLORS-->
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="copyright">#334353</color>
+    <color name="failed_msg">#d73925</color>
+    <color name="success_msg">#2E7D32</color>
+    <color name="offline_color">#757575</color>
+    <color name="colorWarning">#d73925</color>
+    <color name="dot_inactive_screen3">#0e1e49</color>
+    <color name="button">#008577</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.vanityapp.ProfileActivity">
+<item
+    android:id="@+id/action_edit"
+    android:icon="@drawable/ic_action_edit"
+    android:iconTint="@color/colorWhite"
+    android:title="Edit"
+    app:showAsAction="always"/>
+<item
+    android:id="@+id/action_delete"
+    android:icon="@drawable/ic_delete_red"
+    android:iconTint="@color/colorWhite"
+    android:title="Delete"
+    app:showAsAction="always"/>
+<item
+    android:id="@+id/action_join_course"
+    android:icon="@drawable/ic_action_invite"
+    android:iconTint="@color/colorWhite"
+    android:title="Join Course"
+    app:showAsAction="always"
+    android:visible="false"/>
+</menu>
+
+
