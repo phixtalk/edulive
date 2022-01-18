@@ -34,7 +34,7 @@
     <!--CUSTOM STRINGS-->
     <!--192.168.137.1-->
     <string name="base_url_local">http://192.168.137.1/cyborg/edulive/</string>
-    <string name="base_url">https://www.businessphix.com/edulive/</string>
+    <string name="base_url">http://www.businessphix.com/edulive/</string>
     <string name="font_family">fonts/AvenirLTStd-Book.otf</string>
     <string name="app_slogan">...learning with convenience</string>
     <string name="prompt_firstname">* First Name</string>
